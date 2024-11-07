@@ -7,7 +7,7 @@ import plotly.express as px
 sns.set_style('whitegrid')
 from matplotlib import pyplot as plt
 import joblib as jb
-wpp = jb.load("water_Quality_ML_Trained_Model.sav")
+wpp = jb.load("water_potability_predictor.joblib")
 model = wpp['model']
 scaler = wpp['scaler']
 input_cols = wpp['input_cols']
